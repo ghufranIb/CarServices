@@ -1,0 +1,103 @@
+body
+{
+background-image:linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.9)),url(../imeges/i.jpg);
+    background-size:cover;
+    background-position: center;
+    color: white !important;
+}
+.breadcrumbs-section
+{
+    
+    background-color:rgba(0,0,0,0.6);
+    
+}
+.breadcrumb
+{
+        background-color:rgba(0,0,0,0.9);
+
+}
+.navbar-toggler-icon
+{
+    background-color: red;
+    border-radius:5px; !important;
+}
+.navbar-toggler-icon span 
+{
+    border-radius:8px;
+    
+}
+.navbar-toggler-icon span > span
+{
+    border-radius:3px;
+    background-color: gray;
+    padding: 3px;
+}
+.navbar-brand
+{
+   font-size: 16px;
+    font-weight: bold;
+    color: white;
+}
+.navbar-brand:hover
+{
+    color: red;
+}
+.nav-item
+{
+    padding: 0 20px;
+    font-weight: bold; 
+}
+.nav-link
+{
+    color: white;
+}
+.nav-link:hover
+{    
+    color: red;
+}
+.services
+{
+    margin: 90px auto;
+    text-align: center;
+}
+h1
+{
+    font-family: sans-serif;
+    letter-spacing: 1px;
+}
+h1:after
+{
+    content: '';
+    background: white;
+    display: block;
+    width: 150px;
+    height: 3px;
+    margin: 10px auto;
+}
+#h1 span
+{
+     color:red;
+   
+}
+.icon
+{
+    font-size: 40px;
+    margin: 20px auto;
+    padding: 20px;
+    height: 80px;
+    width: 80px;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+.col-md-6:hover
+{
+    box-shadow: 9px 7px 5px -3px rgba(255,255,255,0.5);
+    cursor: pointer;
+}
+#icon
+{
+   
+    height: 10px;
+    border-radius: 100%;   
+}
+

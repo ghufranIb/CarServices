@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+ 
+   
+
+    <title>CarServices</title>
+      
+       <style>
+      #map {
+    width: 100%;
+     height: 600px;
+  }
+  html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+      </style>
+  </head>
+  <body >
+      <div id="map"></div>
+     
+      <script >
+      var map;
+     var marker;
+     var infoWindow;
+      var markers = [
+              {
+                position: {lat: 32.551445, lng: 35.89314},
+                title: 'Irbid,Jordan',
+                info: 'This Is A lovely City '
+              },
+              
+              {
+              position: {lat: 32.48592, lng:  36.00816},
+              title: 'alhouson',
+               info:'Traditional Ciy'
+                  
+              },
+              
+              {
+              position: {lat: 32.55873, lng: 36.00816},
+              title: 'Al-Ramtha',
+                  info:' Ciy'
+              }
+              
+          ];
+      function initMap()  {
+           
+          map = new google.maps.Map(document.getElementById('map'), {
+  center: {lat: 32.551445, lng: 35.851479},
+  zoom: 11
+});
+    
+          markers.forEach(function(loc){
+             
+    marker= new google.maps.Marker({
+   
+      position: loc.position,
+       title: loc.title,
+        map :map
+        
+  });
+              
+   infoWindow = new google.maps.InfoWindow({
+        content: loc.info
+    });
+          marker.addListener('click', function(){
+              infoWindow.open(map,markers);
+          })
+          
+      });
+      }
+          
+     
+
+                                   
+      </script>
+      
+      <script defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDdnEnnQjsP878uvjKwucRYwGnc47hs3RE&callback=initMap">
+</script>
+    </body>
+</html>

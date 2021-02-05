@@ -1,0 +1,94 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body
+{
+    background: Black;
+}
+.row
+{
+    background :#313335;
+    border-radius: 40px;
+}
+.navbar-toggler-icon
+{
+    background-color: red;
+    border-radius:5px; !important;
+}
+.navbar-toggler-icon span 
+{
+    border-radius:8px;
+    
+}
+.navbar-toggler-icon span > span
+{
+    border-radius:3px;
+    background-color: gray;
+    padding: 3px;
+}
+.navbar-brand
+{
+   font-size: 16px;
+    font-weight: bold;
+    color: white;
+}
+.navbar-brand:hover
+{
+    color: red;
+}
+.nav-item
+{
+    padding: 0 20px;
+    font-weight: bold;
+}
+.nav-link:hover
+{    
+    color: red;
+}
+a
+{
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+}
+.btn
+{
+    margin: 20% 4% 10% 0;
+}
+img
+{
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+
+h4
+{
+    color: white;
+    font-family:sans-serif;
+}
+.btn1
+{
+    border: none;
+    outline: none;
+    height: 50px;
+    width: 100%;
+    background-color: #313335;
+    color: white;
+    font-weight: bold;
+    height: 50px;
+    width: 100%;
+    border-radius: 4px;
+}
+.btn1:hover
+{
+    background: white;
+    border: 1px solid;
+    color:red;
+}
+#a
+{
+    text-align: center;
+    color: red;
+}

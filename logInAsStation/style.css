@@ -1,0 +1,109 @@
+body
+{
+background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../imeges/W.jpeg);
+    background-size:cover;
+    background-position: center;
+    color: white !important;
+}
+.row
+{
+    background :#313335;
+    border-radius: 70px;
+    opacity: .7;
+}
+.navbar-toggler-icon
+{
+    background-color: red;
+    border-radius:5px; !important;
+}
+.navbar-toggler-icon span 
+{
+    border-radius:8px;
+    
+}
+.navbar-toggler-icon span > span
+{
+    border-radius:3px;
+    background-color: gray solid;
+    padding: 3px;
+  
+}
+.navbar-brand
+{
+   font-size: 17px;
+    font-weight: bold;
+    color: white;
+}
+.navbar-brand:hover
+{
+    color: red;
+}
+.nav-item
+{
+    padding: 0 20px;
+    font-weight: bold;
+}
+.nav-link:hover
+{    
+    color: red;
+}
+a
+{
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+}
+.btn
+{
+    margin: 20% 4% 10% 0;
+}
+img
+{
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    padding-top: 100px;
+    
+}
+
+h4
+{
+    color: white;
+    font-family:sans-serif;
+    tab-size: 20px;
+}
+.btn1
+{
+    border: none;
+    outline: none;
+    height: 50px;
+    width: 100%;
+    background-color: #313335;
+    color: white;
+    font-weight: bold;
+    height: 50px;
+    width: 100%;
+    border-radius: 4px;
+}
+.btn1:hover
+{
+    background: white;
+    border: 1px ;
+    color:red;
+}
+#a
+{
+    text-align: center;
+    color: red;
+}
+h1
+{
+    font-family: sans-serif;
+    letter-spacing: 1px;
+    padding-top: 50px;
+}
+
+#h1 span
+{
+     color:red;
+   
+}

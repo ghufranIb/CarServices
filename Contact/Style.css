@@ -1,0 +1,56 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;   
+}
+body
+{
+    background-color:black;
+}
+.head
+{
+    background-size: 100% 100%;
+    width: 100%;
+}
+.navbar-brand
+{
+   font-size: 16px;
+    font-weight: bold;
+    color: white;
+}
+.navbar-brand:hover
+{
+    color: red;
+}
+
+.nav-item
+{
+    padding: 0 20px;
+    font-weight: bold;
+}
+.nav-link:hover
+{
+    color: red;
+}
+a
+{
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+}
+#icon
+{
+    font-size: 30px;
+    color: red;
+}
+.btn
+{
+    background-color: red;
+    color: black; 
+}
+.btn:hover
+{
+    background-color:  white;
+    color: black;
+}
