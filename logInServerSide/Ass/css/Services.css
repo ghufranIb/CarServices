@@ -1,6 +1,6 @@
 body
 {
-background-image:linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.9)),url(../imeges/i.jpg);
+background-image:linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.9)),url(/img/i.jpg);
     background-size:cover;
     background-position: center;
     color: white !important;
