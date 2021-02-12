@@ -1,4 +1,5 @@
-const express = require("express");
+
+const express = require('express');
 const app = express();
 const mongoose = require('mongoose');
 const bodyparser = require("body-parser");
@@ -14,7 +15,7 @@ app.use(express.static("public"));
 app.set('view engine','ejs');
 
 
-
+app.use(express.static(path.join(__dirname,'ASS/img')))
 app.use('/css',express.static(path.resolve(__dirname,"ASS/css")))
 app.use('/img',express.static(path.resolve(__dirname,"ASS/img")))
 app.use('/js',express.static(path.resolve(__dirname,"ASS/js")))
