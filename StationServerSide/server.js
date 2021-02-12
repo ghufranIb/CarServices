@@ -31,7 +31,6 @@ const db = mongoose.connect('mongodb://localhost/StationInfoDB',{
 }) 
 
 
-
 app.listen(8000,function(){
     
     console.log("Server is running in port 8000");

@@ -1,0 +1,44 @@
+<%- include ('include/header') %>
+
+<link rel="stylesheet" href="/css/GMap.css">
+<script src="/js/Gmap.js"></script>
+<link href="/js/Gmap.js">
+<body >
+    <body>
+   <section id="title" class="title">
+    <div class="container-fluid">
+   <nav class="navbar navbar-expand-lg ">
+<a class="navbar-brand" href="/index"> PapayForCar</a>
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon">men</span>
+    
+  </button>
+       <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+       <ul class=" navbar-nav ml-auto">
+           <li class="nav-item">
+           <a class="nav-link" href="/index">Home</a>
+           </li>
+           <li class="nav-item">
+           <a class="nav-link" href="/services">Services</a>
+           </li>
+           <li class="nav-item">
+           <a class="nav-link" href="">Feedback</a>
+           </li>
+           <li class="nav-item">
+           <a class="nav-link" href="/contact">Contact</a>
+           </li>
+  
+       </ul>
+       </div>
+      </nav>
+      <div id="map">
+    </div>
+       </div>
+        </section>
+       
+      
+      <script defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDdnEnnQjsP878uvjKwucRYwGnc47hs3RE&callback=initMap">
+</script>
+     
+     <%- include ('include/footer') %>

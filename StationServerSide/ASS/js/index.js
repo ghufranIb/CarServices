@@ -1,3 +1,5 @@
+
+
 $("#add_user").submit(function(event){
     alert("Data Inserted Successfully!");
 })
@@ -38,7 +40,7 @@ if(window.location.pathname == "/"){
         }
 
         if(confirm("Do you really want to delete this record?")){
-            $.ajax(request).done(function(response){
+            $.ajax(request).done(function(responses){
                 alert("Data Deleted Successfully!");
                 location.reload();
             })

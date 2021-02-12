@@ -1,0 +1,58 @@
+#map
+{
+    width: 100%;
+     height: 600px;
+  }
+  html, body
+{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+#title
+{
+    background-color:black;
+}
+
+.container-fluid
+{
+    padding: 7% 16%;
+}
+h1
+{
+    font-family: roboto,sans-serif;
+    font-weight: 500;
+    font-size: 45px;
+    color:white;
+    padding-top: 78px;
+}
+span
+{
+    color: red;
+}
+.navbar-brand
+{
+   font-size: 16px;
+    font-weight: bold;
+    color: white;
+}
+.navbar-brand:hover
+{
+    color: red;
+}
+
+.nav-item
+{
+    padding: 0 20px;
+    font-weight: bold;
+}
+.nav-link:hover
+{
+    color: red;
+}
+a
+{
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+}

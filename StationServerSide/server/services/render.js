@@ -1,7 +1,7 @@
 
 const axios = require('axios');
 
-exports.homeRoutes= (req,res) =>
+exports.homeRoutes = (req,res) =>
 {
     axios.get('http://localhost:8000/api/users')
     .then(function(response){
@@ -9,7 +9,7 @@ exports.homeRoutes= (req,res) =>
         res.render('index',{users:response.data});
         
     })
-    .catch(err=>{ 
+    .catch(err =>{ 
         res.send(err);
         
     })
@@ -22,12 +22,12 @@ exports.add_user = (req,res) =>
 }
     
 exports.update_user = (req,res) =>{ 
-    axios.get('http://localhost:8000/api/users',{ params :  {   id :  req.query.id   }})
+    axios.get('http://localhost:8000/api/users',{ params :  {   id :  req.query.id }})
     
     .then(function(userdata){
         
         res.render("update_user",  {  user  
-            :userdata.data})
+            :  userdata.data})
     })
   .catch(err=>{
         res.send(err);

@@ -1,0 +1,70 @@
+<%- include("./include/header") %>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="img">
+<body>
+      <section class="form my-4 mx-5">
+          
+      <div class="container">
+          <nav class="navbar navbar-expand-lg ">
+<a class="navbar-brand" href="/index">PapayForCar</a>
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+    <span></span>
+    <span></span>
+  </button>
+       <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+       <ul class=" navbar-nav ml-auto">
+           <li class="nav-item">
+           <a class="nav-link" href="/index">Home</a>
+           </li>
+           <li class="nav-item">
+           <a class="nav-link" href="/services">Services</a>
+           </li>
+           <li class="nav-item">
+           <a class="nav-link" href="">Feedback</a>
+           </li>
+           <li class="nav-item">
+           <a class="nav-link" href="/contact">Contact</a>
+           </li>
+       </ul>
+       </div>
+      </nav>
+        <div class="row no-gutters">
+          <div class="col-lg-5">  
+    
+              </div>
+            <div class="col-lg-7 px-5 pt-5">
+                <h1 class="font-weight-bold py-3"> </h1>
+                <h4>Sign into your account</h4>
+            <form  method="post" action="/login">
+                <div class="form-row">
+                    <div class="col-lg-7">
+                        <label for ="InputUserName"> UserName</label>
+                    <input class="form-control my-3 p-4" id="InputUserName" type="text" name="name"  placeholder="UserName" >
+                    </div>
+                </div>
+
+                <div class="form-row">
+                 <div class="col-lg-7">
+                <label for ="InputPassword">Password</label>
+               <input class="form-control" type="password" id="InputPassword" placeholder="InputPassword"  name="Password">
+                    </div>
+                </div>  
+                
+                <div class="form-row">
+                 <div class="col-lg-7">
+            <button type="submit" class="btn1 mt-3 mb-5 "> <a  id="a" href="/services">LogIn</a>
+                     </button>
+                   <a href="/" class="btn1 mt-3 mb-5 btn-primary">Go Back</a>
+
+                    </div>
+                </div> 
+                <a id="A" href="" >Forgot Password</a>
+                <p id="p">Don't have an account? <a id="A" href="/register">RegesterHere</a> </p>
+                 </form>
+            </div>
+          </div>
+          </div>
+      </section>
+
+<%- include("./include/footer") %>

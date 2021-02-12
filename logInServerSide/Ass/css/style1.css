@@ -1,0 +1,144 @@
+#title
+{
+    background-color:black;
+}
+.image-title
+{
+    width: 55%;
+    
+}
+.container-fluid
+{
+    padding: 7% 16%;
+}
+h1
+{
+    font-family: roboto,sans-serif;
+    font-weight: 500;
+    font-size: 45px;
+    color:white;
+    padding-top: 78px;
+}
+span
+{
+    color: red;
+}
+.navbar-brand
+{
+   font-size: 16px;
+    font-weight: bold;
+    color: white;
+}
+.navbar-brand:hover
+{
+    color: red;
+}
+
+.nav-item
+{
+    padding: 0 20px;
+    font-weight: bold;
+}
+.nav-link:hover
+{
+    color: red;
+}
+a
+{
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+}
+span
+{
+    color: red;
+}
+.btn
+{
+    margin: 20% 4% 10% 0;
+    
+}
+
+}
+#content
+{
+    padding: 4% 10%;
+}
+#content h1
+{
+    padding: 10% 12%;
+    color: red;
+}
+.image-content
+{
+    padding: 10% 12%;
+}
+#carousel
+{
+    padding: 7% 15%;
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+.navbar-toggler-icon
+{
+    border-radius:0 !important;
+    background-color: red;
+}
+
+.car-image
+{
+    widows: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 3% 3%;
+    animation:animate 2s ease;
+}
+.car-image:hover
+{
+    box-shadow: 0px 0px 10px 0px crimson,
+                 0 0 0 10px lightblue,
+                 0 0 0 20px white,
+                 0 0 0 25px red,
+                 0 0 0 27px blue;
+}
+@keyframes animate{
+    0%,100%{
+        box-shadow: 0 0 0 3px transparent;
+        transition: 1s;
+    }
+    50%{
+        box-shadow: 0px 0px 0px crimson,
+                    0 0 0 10px lightblue,
+                    0 0 0 20px white,
+                    0 0 0 25px red,
+                    0 0 0 27px blue;
+        transition: 1s;
+}
+    }
+#features
+{
+    padding: 13% 15%;
+    background-image: linear-gradient(45deg,black 50%, white 50%);
+}
+.feature-box
+{
+    text-align: center;
+}
+#features h3
+{
+    font-family: sans-serif;
+    font-weight: bold;
+    color: red;
+}
+#features p
+{
+    font-family: "Montserrat";
+    color:red;
+}
+#features .image
+{
+    width: 75px;
+    height: 75px;
+    margin-bottom: 5%;
+}
