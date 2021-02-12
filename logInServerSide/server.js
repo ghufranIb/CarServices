@@ -15,10 +15,11 @@ app.use(express.static("public"));
 app.set('view engine','ejs');
 
 
-app.use(express.static(path.join(__dirname,'ASS/img')))
+
 app.use('/css',express.static(path.resolve(__dirname,"ASS/css")))
 app.use('/img',express.static(path.resolve(__dirname,"ASS/img")))
 app.use('/js',express.static(path.resolve(__dirname,"ASS/js")))
+app.use('/ASS',express.static(path.resolve(__dirname,"ASS")))
 
 
 
@@ -75,22 +76,28 @@ app.get('/contact', (req,res)=>{
         })
 
 app.post('/register', (req,res) =>{
-const UserName = req.body.UserName;
+ const UserName = req.body.UserName; 
  const Password = req.body.Password; 
-const Address = req.body. Address ;
+const Address = req.body.Address;
 const PhoneNumber = req.body.PhoneNumber;
     
  const NewUser = new User({
-UserName :UserName ,
- Password :Password,
-  Address: Address, 
+UserName:UserName,
+ Password:Password,
+  Address : Address, 
  PhoneNumber : PhoneNumber
      });
- NewUser.save(err => {
- err?  console.log(err) : res.send("sucessful Created User"); 
-  
+ NewUser.save(function(err,Savedusers){
+          if (err) {
+              res.status(500).send({error:"error"})
+          } else {
+              res.send(Savedusers)
+          }
+          
  });
 });
+    
+              
 
 app.post('/login', (req,res)=>{
     
