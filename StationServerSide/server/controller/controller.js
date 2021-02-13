@@ -12,12 +12,12 @@ exports.create= (req,res)=>
         gender :req.body.gender,
         status: req.body.status,
         Break : req.body.Break,
-        Date :req.body.Date
+//        Date :req.body.Date
         
     })
     user.save(user)
         .then(data => {
-        res.redirect('/add_user');
+        res.redirect('/add-user');
     })
           .catch(err =>{
             res.status(500).send({message : err.message || "Some error occurred while creating a create operation"
@@ -33,7 +33,7 @@ exports.find=(req,res)=>{
         
         Userdb.findById(id).then(data =>{
             if(!data){
-                res.status(404).send({message:"Not found wih id"+id})
+                res.status(404).send({message:"Not found user with id"+id})
             }else{
                 res.send(data)
             }

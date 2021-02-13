@@ -14,7 +14,7 @@ $("#update_user").submit(function(event){
         data[n['name']] = n['value']
     })
 
-
+   console.log(data);
     var request = {
         "url" : `http://localhost:8000/api/users/${data.id}`,
         "method" : "PUT",
@@ -45,6 +45,6 @@ if(window.location.pathname == "/"){
                 location.reload();
             })
         }
-
+  
     })
 }

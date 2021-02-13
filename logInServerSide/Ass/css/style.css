@@ -11,23 +11,11 @@ background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(/img/w.jpe
     border-radius: 400px;
     opacity: .9;
 }
-.navbar-toggler-icon
+span
 {
-    background-color: red;
-    border-radius:5px; !important;
+    color: red;
 }
-.navbar-toggler-icon span 
-{
-    border-radius:8px;
-    
-}
-.navbar-toggler-icon span > span
-{
-    border-radius:3px;
-    background-color: gray solid;
-    padding: 3px;
-  
-}
+
 .navbar-brand
 {
    font-size: 17px;

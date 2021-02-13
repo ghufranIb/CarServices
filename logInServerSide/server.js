@@ -2,18 +2,17 @@
 const express = require('express');
 const app = express();
 const mongoose = require('mongoose');
-const bodyparser = require("body-parser");
+const bodyParser = require("body-parser");
 
 
 const ejs = require("ejs");
 const path = require('path');
 
 
-app.use(bodyparser.urlencoded({ extended : true}))
+app.use(bodyParser.urlencoded({ extended : true}))
  
-app.use(express.static("public"));
-app.set('view engine','ejs');
 
+app.set('view engine','ejs');
 
 
 app.use('/css',express.static(path.resolve(__dirname,"ASS/css")))
@@ -26,8 +25,7 @@ app.use('/ASS',express.static(path.resolve(__dirname,"ASS")))
 const db = mongoose.connect('mongodb://localhost/usersDB',{
     useNewUrlParser: true ,
     useUnifiedTopology: true,
-    useCreateIndex:true,
-    useFindAndModify:false
+
 }) 
 
 let User = require('./models/User')
@@ -82,19 +80,14 @@ const Address = req.body.Address;
 const PhoneNumber = req.body.PhoneNumber;
     
  const NewUser = new User({
-UserName:UserName,
- Password:Password,
+  UserName:UserName,
+  Password:Password,
   Address : Address, 
- PhoneNumber : PhoneNumber
+  PhoneNumber : PhoneNumber
      });
- NewUser.save(function(err,Savedusers){
-          if (err) {
-              res.status(500).send({error:"error"})
-          } else {
-              res.send(Savedusers)
-          }
-          
- });
+ NewUser.save(err =>{
+        err ? console.log(err) :  res.send("Successfully Created User");
+          }); 
 });
     
               
@@ -108,7 +101,7 @@ app.post('/login', (req,res)=>{
           if (err) {
               console.log(err);
           } else {
-              if (foundResults.Password == Password){
+              if (foundResults.Password== Password){
                   res.send('You Logged In!')
               }  else {
                   res.send('Incorrect UserName or Password')
