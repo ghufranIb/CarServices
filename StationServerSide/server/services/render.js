@@ -15,8 +15,7 @@ exports.homeRoutes = (req,res) =>
     })
 }
 
-exports.add_user = (req,res) =>
- {
+exports.add_user = (req,res) =>{
   res.render('add_user');
 
 }
