@@ -1,0 +1,26 @@
+<%- include("./include/header") %>
+<div class="container mt-5">
+    <a href="/" class="btn btn-secondary mb-5">Go Back</a>
+    <h1>Register Account</h1>
+    <form action="/register" method="POST">
+        <div class="form-group">
+            <label for="exampleInputUserName">UserName</label>
+            <input type="text" name="UserName" class="form-control" id="exampleInputUserName">
+        </div>
+                <div class="form-group">
+            <label for="exampleInputAddress">Address</label>
+            <input type="text" name="Address" class="form-control" id="exampleInputAddress">
+        </div>
+              <div class="form-group">
+            <label for="exampleInputPhoneNumber">PhoneNumber</label>
+            <input type="number" name="PhoneNumber" class="form-control" id="exampleInputPhoneNumber">
+        </div>
+        <div class="form-group">
+            <label for="exampleInputPassword1">Password</label>
+            <input type="password" name="Password" class="form-control" id="exampleInputPassword1">
+        </div>
+        <button type="submit" class="btn btn-secondary">Register</button>
+    </form>
+</div>
+
+<%- include("./include/footer")  %>
